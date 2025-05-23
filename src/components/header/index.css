@@ -1,0 +1,148 @@
+/*  */
+
+/* :root {
+  --gray: #ededed;
+} */
+.header-main-wrap {
+  border-bottom: 1px solid var(--gray);
+}
+.header-wrap {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.header-wrap > img {
+  margin-right: 50px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-list {
+  margin-right: 80px;
+}
+
+.header-item {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+}
+.header-item.bg {
+  color: var(--green-color);
+}
+
+.search-form {
+  height: 70px;
+  border-right: 1px solid var(--gray);
+}
+.search-form > img {
+  margin-right: 15px;
+}
+
+.search-form > input {
+  height: 100%;
+  width: 320px;
+}
+
+/*  */
+
+.arrow-wrapper {
+  position: relative;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-wrapper::before,
+.arrow-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: var(--gray);
+}
+
+.arrow-wrapper::before {
+  left: 0;
+}
+
+.arrow-wrapper::after {
+  right: 0;
+}
+
+.arrow-img {
+  margin: 0 16px 0 25px;
+}
+
+.icons-wrap {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.burger-btn {
+  display: none;
+}
+
+/* responsiv */
+
+@media (max-width: 768px) {
+  .header-wrap > img {
+    margin-right: 25px;
+  }
+  .container {
+    padding: 0 0 0 25px;
+  }
+  .header-list {
+    margin-right: 30px;
+  }
+  .arrow-img {
+    margin: 0 15px;
+  }
+  .search-form {
+    border: none;
+  }
+  .search-form > input {
+    width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 376px) {
+  .header-main-wrap {
+    border-bottom: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .icons-wrap {
+    margin-right: 15px;
+  }
+  .arrow-wrapper::before,
+  .arrow-wrapper::after {
+    display: none;
+  }
+  .burger-btn {
+    display: block;
+  }
+  .arrow-img,
+  .search-form > img {
+    margin: 0;
+  }
+}
