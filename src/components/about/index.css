@@ -2,8 +2,12 @@
 
 .about-section {
   background-color: var(--header-bg-color);
+  /* background-color: rgb(214, 79, 79); */
   height: 470px;
   /* margin-top: 50px; */
+  height: 88vh;
+
+  margin-bottom: 52px;
 }
 .about-wrapper {
   display: flex;
@@ -48,7 +52,7 @@
 @media (max-width: 768px) {
   .about-section {
     height: 370px;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
   }
   .about {
     width: 350px;
@@ -77,6 +81,7 @@
   .about-section {
     height: 429px;
     overflow: hidden;
+    margin-bottom: 40px;
   }
   .about-wrapper {
     flex-direction: column;
@@ -89,6 +94,7 @@
     display: block;
     position: absolute;
     right: 0;
+    bottom: -270px;
   }
 
   .about-img-wrap {

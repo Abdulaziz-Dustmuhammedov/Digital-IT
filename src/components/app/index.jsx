@@ -6,12 +6,19 @@ import React from "react";
 import "./index.css";
 import Header from "../header";
 import About from "../about";
+import Advantages from "../advantages";
+import Direction from "../direction";
 
 function App() {
   return (
-    <div>
-      <Header />
+    <div className="app">
+      <div className="header">
+        <Header />
+      </div>
+
       <About />
+      <Advantages />
+      {/* <Direction /> */}
     </div>
   );
 }
