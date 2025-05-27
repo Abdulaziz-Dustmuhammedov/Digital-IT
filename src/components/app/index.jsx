@@ -8,6 +8,8 @@ import Header from "../header";
 import About from "../about";
 import Advantages from "../advantages";
 import Direction from "../direction";
+import School from "../school";
+import DirectionTablet from "../direction-tablet";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <About />
       <Advantages />
       {/* <Direction /> */}
+      <DirectionTablet />
+      {/* <School /> */}
     </div>
   );
 }

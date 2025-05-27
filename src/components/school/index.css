@@ -1,0 +1,13 @@
+/*  */
+
+.school-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.school-title {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 43px 0 30px;
+}

@@ -1,0 +1,30 @@
+/*  */
+
+.direction-tablet-section {
+  background-color: red;
+  background-color: var(--header-bg-color);
+}
+
+.direction-tablet-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.direction-tablet-title {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 50px 0 40px;
+}
+
+.direction-tablet-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 45px;
+
+  overflow-x: scroll;
+}
+.direction-tablet-item > a {
+  font-size: 14px;
+  font-weight: 700;
+}
