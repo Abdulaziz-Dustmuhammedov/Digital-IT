@@ -41,6 +41,7 @@ body {
 :root {
   --header-bg-color: #f8f8f8;
   --green-color: #00d254;
+  --green-text-color: #01e45c;
   --gray: #ededed;
   --font-black: #2b2b2b;
 }

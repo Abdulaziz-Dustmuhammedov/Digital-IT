@@ -4,6 +4,7 @@
 import React from "react";
 
 import "./index.css";
+
 import Header from "../header";
 import About from "../about";
 import Advantages from "../advantages";

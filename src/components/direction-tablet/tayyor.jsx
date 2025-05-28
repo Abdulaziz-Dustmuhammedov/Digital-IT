@@ -15,89 +15,7 @@ const directions = [
   "Контент-маркетинг"
 ];
 
-const allCourses = [
-  [
-    // activeIndex === 0 (Программирование)
-    [
-      "Все курсы по программированию",
-      "Python-разработка",
-      "Web-разработка",
-      "Мобильная разработка",
-      "JavaScript-разработка",
-      "Java-разработка",
-      "Разработка игр",
-      "Создание сайтов",
-      "Системное администрирование",
-      "QA-тестирование",
-      "Android-разработка",
-      "Управление разработкой и IT",
-      "Frontend-разработка",
-      "Разработка игр на Unity"
-    ],
-    [
-      "Разработка на C#",
-      "PHP-разработка",
-      "DevOps",
-      "IOS-разработка",
-      "Верстка на HTML/CSS",
-      "Разработка на C++",
-      "Разработка игр на Unreal Engine",
-      "Разработка на Kotlin",
-      "Информационная безопасность",
-      "Golang-разработка",
-      "Разработка на Swift",
-      "1C-разработка",
-      "VR/AR разработка",
-      "Фреймворк Laravel"
-    ]
-  ],
-  [
-    // activeIndex === 1 (Маркетинг)
-    [
-      "Цифровой маркетинг",
-      "Таргетинг в соцсетях",
-      "SEO-продвижение",
-      "Контекстная реклама",
-      "Маркетинговая аналитика"
-    ],
-    [
-      "Брендинг",
-      "SMM-стратегии",
-      "Email-маркетинг",
-      "Influencer маркетинг",
-      "Маркетинг-автоматизация"
-    ]
-  ],
-  [
-    // activeIndex === 2 (Дизайн)
-    [
-      "Основы UX/UI дизайна",
-      "Figma для начинающих",
-      "Motion-дизайн",
-      "Графический дизайн",
-      "Дизайн мобильных приложений",
-      "Типографика",
-      "3D-дизайн",
-      "Интерактивный дизайн",
-      "Прототипирование",
-      "Дизайн систем"
-    ],
-    [
-      "Цвет и композиция",
-      "Web-дизайн",
-      "Анимация в интерфейсах",
-      "Продуктовый дизайн",
-      "Иллюстрация",
-      "Responsive дизайн",
-      "UX-исследования",
-      "VR/AR-дизайн",
-      "Microinteractions",
-      "Microinteractions"
-    ]
-  ]
-];
-
-const DirectionTablet = () => {
+const DirectionTabletTayyor = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -121,27 +39,13 @@ const DirectionTablet = () => {
           </ul>
         </div>
 
-        <div className="course-wrapper fixed-height scrollable">
-          {allCourses[activeIndex]?.map((column, columnIndex) => (
-            <div className="row-wrap" key={columnIndex}>
-              <ul className="nav-list">
-                {column.map((course, idx) => (
-                  <li className="nav-item" key={idx}>
-                    {course} <img src={rightArrow} alt="" />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-
         {/* kurslar ro'yxati */}
-        {/* {activeIndex === 0 && (
+        {activeIndex === 0 && (
           <div className="course-wrapper">
             <div className="row-wrap">
               <ul className="nav-list">
                 <li className="nav-item">
-                  Все курсы по программированию <img src={rightArrow} alt="" />
+                  aaa <img src={rightArrow} alt="" />
                 </li>
                 <li className="nav-item">
                   Python-разработка <img src={rightArrow} alt="" />
@@ -234,13 +138,13 @@ const DirectionTablet = () => {
               </ul>
             </div>
           </div>
-        )} */}
+        )}
       </div>
     </div>
   );
 };
 
-export default DirectionTablet;
+export default DirectionTabletTayyor;
 
 //
 //
