@@ -3,6 +3,8 @@
 .direction-tablet-section {
   background-color: red;
   background-color: var(--header-bg-color);
+
+  display: none;
 }
 
 .direction-tablet-wrapper {
@@ -49,7 +51,13 @@
   align-items: center;
   width: 730px;
 
-  max-height: 500px;
-  overflow-y: auto;
+  /* max-height: 500px;
+  overflow-y: auto; */
 }
 /* } */
+
+@media (max-width: 768px) {
+  .direction-tablet-section {
+    display: block;
+  }
+}

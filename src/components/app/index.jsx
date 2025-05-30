@@ -11,6 +11,7 @@ import Advantages from "../advantages";
 import Direction from "../direction";
 import School from "../school";
 import DirectionTablet from "../direction-tablet";
+import DirectionMobile from "../direction-mobile";
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
 
       <About />
       <Advantages />
-      {/* <Direction /> */}
-      <DirectionTablet />
+      <Direction />
+      {/* <DirectionTablet /> */}
       {/* <School /> */}
+      <DirectionMobile />
     </div>
   );
 }
